@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="checkout form">
+    <meta name="author" content="M. Ali SÜSLÜ">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d35e5d185c.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="empty-div"></div>
+    <main>    
+        <header><h1>Checkout</h1></header>
+        <form action="#" method="GET" id="checkout-form" class="checkout-form">
+            <div class="personal-info">
+
+                <div class="sub-personal-info contact-info">
+
+                    <h2>Contact Info</h2>
+
+                    <div class="sub-sub-personal-info email">
+                        <label for="e-mail">E-Mail</label>
+                        <div class="input-field">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                            <input type="email" id="e-mail" placeholder="Enter your e-mail.." required>
+                        </div>
+                    </div>
+
+                    <div class="sub-sub-personal-info phone">
+                        <label for="phone">Phone</label>
+                        <div class="input-field">
+                            <i class="fa-solid fa-phone"></i>
+                            <input type="tel" id="phone" placeholder="Enter your phone..." required>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="shipping-address">
+
+                    <h2>Shipping Address</h2>
+
+                    <div class="sub-sub-personal-info full-name">
+                        <label for="full-name">Full Name</label>
+                        <div class="input-field">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="name" id="full-name" placeholder="Enter your full name..." required>
+                        </div>
+                    </div>
+
+                    <div class="sub-sub-personal-info address">
+                        <label for="address">Address</label>
+                        <div class="input-field">
+                            <i class="fa-solid fa-house"></i>
+                            <input type="text" id="address" placeholder="Enter your address.." required>
+                        </div>
+                    </div>
+
+                    <div class="sub-sub-personal-info city">
+                        <label for="city">City</label>
+                        <div class="input-field">
+                            <i class="fa-solid fa-city"></i>
+                            <input type="text" id="city" placeholder="Enter your city.." required>
+                        </div>
+                    </div>
+
+                    <div class="sub-sub-personal-info country-postal">
+                        <div class="sub-sub-sub-personal-info country">
+                            <label for="country">Country</label>
+                            <div class="select-box">
+                                <i class="fa-solid fa-earth"></i>
+                                <select name="country" id="country">
+                                    <option value="germany">Germany</option>
+                                    <option value="netherlands">Netherlands</option>
+                                    <option value="belgium">Belgium</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="sub-sub-sub-personal-info postal">
+                            <label for="postal">Post Code</label>
+                            <div class="input-field postal-input">
+                                <i class="fa-solid fa-mail-bulk"></i>
+                                <input type="text" id="postal" placeholder="Enter postal code.." required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sub-sub-personal-info save-info">
+                        <input type="checkbox" id="save-info">
+                        <label for="save-info">See this information next time</label>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="pricing-info">
+
+                <div class="products">
+                    <div class="product vintage-backbug">
+                        <img src="./IMG/photo1.png" alt="bag-image">
+                        <div class="price-qty">
+                            <div class="price">
+                                <h2>Vintage Backbag</h2>
+                                <p><span class="actual">$54.99</span> <del class="draft">$54.99</del></p>
+                            </div>
+                            <div class="qty">
+                                <div class="count decrease" type="">-</div>
+                                <p>1</p>
+                                <div class="count increase">+</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product levi-shoes">
+                        
+                        <img src="./IMG/photo2.png" alt="shoe-image">
+                        <div class="price-qty">
+                            <div class="price">
+                                <h2>Levi Shoes</h2>
+                                <p><span class="actual">$74.99</span> <del class="draft">$124.99</del></p>
+                            </div>
+                            <div class="qty">
+                                <div class="count decrease">-</div>
+                                <p>1</p>
+                                <div class="count increase">+</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="prices">
+                    <p>Shipping<span>$19</span></p>
+                    <p>Total<span>$148.98</span></p>
+                </div>
+
+            </div>
+
+            <!-- <input type="submit" value="Continue" class="continue"> -->
+
+        </form>
+
+        <button class="continue" type="submit" form="checkout-form">Continue</button>
+        
+    </main>
+</body>
+
+</html>

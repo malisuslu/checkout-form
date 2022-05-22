@@ -86,7 +86,11 @@ label {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+<<<<<<< HEAD
     border: 2px solid #c3c3c3;
+=======
+    border: 1px solid #828282;
+>>>>>>> 8d9d5b83a72af9e46dcce3244856a74664589b2c
     border-radius: 5px;
     margin-top: 10px;
     background-color: white;
@@ -109,7 +113,7 @@ label {
     width: 30px;
 }
 
-.personal-info input:focus {
+.personal-info input:focus, .country i:focus {
     outline: none;
 }
 
